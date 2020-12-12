@@ -9,11 +9,15 @@
 <body>
    <h1>Admin Page</h1> 
    <a href="#" id="pay">이용권</a>
-   <a href="#" id="member">회원</a>
+   <a href="#" id="member">회원관리</a>
    <a href="#" id="help">고객센터</a>
    <a href="#" id="crawling">웹 크롤링</a>
    <script>
        $('#pay').click(e=>{location.href="/move/admins/pay"})
+       $('#crawling').click(e=>{
+           $.getJSON(`/admins/crawling/melon`, d=>{             
+           })
+       })
    </script>
 </body>
 </html>

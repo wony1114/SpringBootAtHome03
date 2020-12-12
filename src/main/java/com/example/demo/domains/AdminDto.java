@@ -6,5 +6,5 @@ import lombok.Data;
 
 @Component @Data 
 public class AdminDto {
-    private String itemTitle, info, price, paidMember, freeMember, paidDate, help;
+    private String itemTitle, itemInfo, price, paidMember, freeMember, paidDate, help;
 }

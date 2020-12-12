@@ -14,7 +14,7 @@ import java.util.function.Supplier;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("px")
 public class Proxy {
     public int interger(String t){
         Function<String, Integer> f = Integer::parseInt;

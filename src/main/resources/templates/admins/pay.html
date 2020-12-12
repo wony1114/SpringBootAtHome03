@@ -5,8 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        table{border: 1px solid purple}
+        table tr{border: 1px solid purple}
+        table tr td{border: 1px solid purple}
+        table tr th{border: 1px solid purple}
+    </style>
 </head>
 <body>
-    
+    <h1>이용권</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th class="text-center">Item Title</th>
+                <th class="text-center">Item Information</th>
+                <th class="text-center">Price</th>
+            </tr>
+        </thead>
+        <tbody id="tb">
+            
+        </tbody>
+    </table>
+    <script>
+        $.getJSON('/admins', d=>{
+            
+        })
+    </script>
 </body>
 </html>
