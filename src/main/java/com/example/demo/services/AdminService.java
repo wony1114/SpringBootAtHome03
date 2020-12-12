@@ -1,12 +1,18 @@
 package com.example.demo.services;
 
+import java.util.List;
+
+import com.example.demo.domains.AdminDto;
+
 import org.springframework.stereotype.Component;
 
 @Component
 public interface AdminService {
 
-	public Object itemTitle();
+	public int itemTitle();
 
-	public Object crawling(String url);
+	public  int crawling(String string);
+
+	public List<AdminDto> pay();
 
 }
